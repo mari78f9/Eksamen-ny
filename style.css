@@ -1,3 +1,95 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+$background: #A4D7ED;
+$background2: #DEC5E3;
+$day: #DDF8E8;
+$date: #DDF8E8;
+$font: #324376;
+$border: #A6EDE2;
+
+body {
+    background: $background;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, $background, $background2);
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(right, $background, $background2);
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right, $background, $background2);
+    /*Fx 3.6-15*/
+    background: linear-gradient(to right, $background, $background2);
+    /*Standard*/
+
+    color: $font;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    height: 250px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    padding: 10% 0 0 0;
+    margin: 0;
+}
+
+#day,
+#date {
+    text-align: center;
+    box-sizing: border-box;
+    height: 250px;
+    width: 230px;
+    border-radius: 10%;
+    border: 10px solid $border;
+    box-shadow:
+        2px 2px 2px $font,
+        -2px 2px 2px $font,
+        -2px -2px 2px $font,
+        2px -2px 2px $font;
+    margin-top: 5%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#day {
+    background: $day;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 80px;
+}
+
+#day span {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#date {
+    padding-top: 60px;
+    background: $date;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#date span {
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 45px;
+    padding-bottom: 15px;
+}
+
 /*MENU*/
 
 .navbar {
