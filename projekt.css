@@ -1,347 +1,325 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-img {
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column2 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
-    margin-top: 1rem;
-    padding: 1rem;
-
 }
 
-body {
-    margin: 0 auto;
-    background-color: #bfbabe;
-
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-a {
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column1 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column2 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*HOVER TOP SLIDE*/
+
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: darkslateblue;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+}
+
+.text1 {
     color: white;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-h1 {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    padding: 0.7rem;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'lato:700';
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2d2f36;
-    text-transform: uppercase;
-    background-color: #FF9207;
-    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
 }
 
-h3 {
+/* unvisited link */
+.container1 a:link {
     color: white;
-    font-size: 2rem;
-    margin-left: 2rem;
-}
-
-h4 {
-    color: #f5bc50;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-
-P {
-    margin-left: 2rem;
-    font-size: 2rem;
-    color: white;
-    padding-bottom: 2rem;
-}
-
-figure {
-    margin: 0;
-}
-
-figcaption {
-    margin: 1rem 1rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
-    margin-top: 0;
-    color: wheat;
-    font-size: 1.2rem;
-}
-
-section,
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    border: 1px solid black;
-    border-color: black;
-    background-color: #1F2532;
-
-}
-
-#medlemmer .sectionwrapper {
-    background-color: #1F2532;
-}
-
-
-#medlemmer a {
-
-    padding-left: 2rem;
-    color: rgb(79, 204, 250);
-
-}
-
-#link .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#ide .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#spilstruktur .sectionwrapper {
-    background-color: #1F2532;
-}
-
-
-
-#maelgruppe .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#moodboard .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#moodboard .col {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-
-#testdokumentation .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#testdokumentation .top {
-    display: flex;
-}
-
-#testdokumentation .col {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-#skister .sectionwrapper {
-    background-color: #1F2532;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
-}
-
-#skitser .col {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-#designdokumentationspil .sectionwrapper {
-    background-color: #1F2532;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
-}
-
-
-#designdokumentationspil .col {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-#designdokumentationtitel .sectionwrapper {
-    background-color: #1F2532;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
-}
-
-
-#designdokumentationtitel .col {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-#layoutdiagram .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#smd .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#assets .sectionwrapper {
-    background-color: #1F2532;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
-}
-
-#assets .top {
-    background-color: #1F2532;
-}
-
-#assets .col {
-    background-color: #1F2532;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 300px;
-}
-
-#assets .mid {
-    background-color: #1F2532;
-
-}
-
-#assets .lyde2 {
-    background-color: #1F2532;
-    display: flex;
-}
-
-#assets .lyde1 {
-    background-color: #1F2532;
-    display: flex;
-
-}
-
-#fernisering .sectionwrapper {
-    background-color: #1F2532;
-    display: flex;
-}
-
-#fernisering .top {
-    display: flex;
-}
-
-#fernisering .bottom {
-    display: flex;
-}
-
-#trelloboard .sectionwrapper {
-    background-color: #1F2532;
-    padding: 10rem;
-
-    text-align: center;
-}
-
-#burndownchart .sectionwrapper {
-    background-color: #1F2532;
-}
-
-#burndownchart .col {
-    background-color: #1F2532;
-    display: flex;
-}
-
-#annonce .sectionwrapper {
-    background-color: #1F2532;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
-}
-
-#annonce .col {
-    background-color: #1F2532;
-    display: flex;
-
-}
-
-header nav a:link {
-    color: #f2e4d7;
 }
 
 /* visited link */
-header nav a:visited {
-    color: #f2e4d7;
+.container1 a:visited {
+    color: white;
 }
 
 /* mouse over link */
-header nav a:hover {
-    color: #ff3e2c;
+.container1 a:hover {
+    color: darkseagreen;
 }
 
 /* selected link */
-header nav a:active {
-    color: #f2e4d7;
+.container1 a:active {
+    color: white;
 }
 
-header {
 
-    font-size: 2rem;
+/*HOVER SLIDE BOTTOM*/
+
+.container2 {
     position: relative;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
-    padding: 1rem;
-
 }
 
-header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 2rem 2.5rem;
-
-
-
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-header a {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: 1rem;
-
-    color: #e3a124;
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: crimson;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
 }
 
-header nav a {
-    font-size: 2rem;
-
-    font-family: 'Lato', sans-serif;
-
-
+.container2:hover .overlay2 {
+    height: 100%;
 }
 
-@media only screen and (min-width:1002px) {
-    header {
-        background-color: rgba(49, 53, 108, 0.49);
+.text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
 
-    }
+/* unvisited link */
+.container2 a:link {
+    color: white;
+}
 
-    header nav {
-        flex-direction: row;
+/* visited link */
+.container2 a:visited {
+    color: white;
+}
 
-        justify-content: flex-end;
-        margin: 1rem 1.5rem;
-    }
+/* mouse over link */
+.container2 a:hover {
+    color: coral;
+}
 
-    header nav a {
-        font-size: 1.7rem;
-        margin: 0 0.5rem;
-        padding: 0 2rem;
-        border-right: 0.1rem solid #f2e4d7;
+/* selected link */
+.container2 a:active {
+    color: white;
+}
 
-    }
+/*HOVER SLIDE RIGHT*/
 
-    header nav a:last-child {
-        border-right: none;
+.container3 {
+    position: relative;
+    width: 100%;
+}
 
-    }
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: midnightblue;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container3:hover .overlay3 {
+    width: 100%;
+    left: 0;
+}
+
+.text3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* unvisited link */
+.container3 a:link {
+    color: white;
+}
+
+/* visited link */
+.container3 a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.container3 a:hover {
+    color: cadetblue;
+}
+
+/* selected link */
+.container3 a:active {
+    color: white;
+}
+
+/*HOVER LEFT SLIDE*/
+
+.container4 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fdfd57;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container4:hover .overlay4 {
+    width: 100%;
+}
+
+.text4 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* unvisited link */
+.container4 a:link {
+    color: black;
+}
+
+/* visited link */
+.container4 a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.container4 a:hover {
+    color: dodgerblue;
+}
+
+/* selected link */
+.container4 a:active {
+    color: black;
 }
