@@ -14,20 +14,6 @@ h1 {
     padding: 0 4px;
 }
 
-.boks {
-    display: flex;
-    flex-direction: row;
-    max-width: 50%;
-}
-
-.boks1 {
-    flex-grow: 1;
-}
-
-.boks2 {
-    flex-grow: 1;
-}
-
 /* Create four equal columns that sits next to each other */
 .column1 {
     flex: 25%;
@@ -81,38 +67,6 @@ h1 {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column2 {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1000px) {
-    .column3 {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column3 {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1000px) {
-    .column4 {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column4 {
         flex: 100%;
         max-width: 100%;
     }
