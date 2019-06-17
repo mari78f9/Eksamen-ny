@@ -1,0 +1,325 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column2 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column1 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column2 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*HOVER TOP SLIDE*/
+
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: darkslateblue;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+}
+
+.text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* unvisited link */
+.container1 a:link {
+    color: white;
+}
+
+/* visited link */
+.container1 a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.container1 a:hover {
+    color: darkseagreen;
+}
+
+/* selected link */
+.container1 a:active {
+    color: white;
+}
+
+
+/*HOVER SLIDE BOTTOM*/
+
+.container2 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: crimson;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container2:hover .overlay2 {
+    height: 100%;
+}
+
+.text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* unvisited link */
+.container2 a:link {
+    color: white;
+}
+
+/* visited link */
+.container2 a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.container2 a:hover {
+    color: coral;
+}
+
+/* selected link */
+.container2 a:active {
+    color: white;
+}
+
+/*HOVER SLIDE RIGHT*/
+
+.container3 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: midnightblue;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container3:hover .overlay3 {
+    width: 100%;
+    left: 0;
+}
+
+.text3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* unvisited link */
+.container3 a:link {
+    color: white;
+}
+
+/* visited link */
+.container3 a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.container3 a:hover {
+    color: cadetblue;
+}
+
+/* selected link */
+.container3 a:active {
+    color: white;
+}
+
+/*HOVER LEFT SLIDE*/
+
+.container4 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fdfd57;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container4:hover .overlay4 {
+    width: 100%;
+}
+
+.text4 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* unvisited link */
+.container4 a:link {
+    color: black;
+}
+
+/* visited link */
+.container4 a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.container4 a:hover {
+    color: dodgerblue;
+}
+
+/* selected link */
+.container4 a:active {
+    color: black;
+}
