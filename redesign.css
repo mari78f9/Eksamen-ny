@@ -14,38 +14,40 @@ h1 {
     padding: 0 4px;
 }
 
+.boks {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+.boks1 {
+    flex-grow: 1;
+}
+
+.boks2 {
+    flex-grow: 1;
+}
+
 /* Create four equal columns that sits next to each other */
 .column1 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column2 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column3 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column4 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column5 {
     flex: 25%;
     max-width: 50%;
     padding: 0 4px;
 }
 
-.column img {
+.column2 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column2 img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
