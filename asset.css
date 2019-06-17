@@ -1,0 +1,27 @@
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.gave {
+    display: flex;
+}

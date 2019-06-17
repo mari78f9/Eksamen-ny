@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksamen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projekt.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Forside</a>
+            <a href="CV.html">Om mig</a>
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="titel.html">Titelsekvens</a>
+                    <a href="stilart.html">01.04.02 Stilartside</a>
+                    <a href="asset.html">02.01.04 Assetliste og dokumentation</a>
+                    <a href="spil.html">03.03.04 Animationsopgaven</a>
+                    <a href="projekt.html">02.05.03 Færdig opgave</a>
+                    <a href="pilot.html">03.01.01 Pilotprojekt</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Links
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://www.youtube.com/watch?v=3H2qieg0tss">Titelsekvens</a>
+                    <a href="http://quizeytimes.com/kea/01_web/04_responsive/01_04_02_responsive_v2/index.html">01.04.02 Stilartside</a>
+                    <a href="doc/02_01_04_Spil_Maria%20Viehweg%20Brendstrup.pdf">02.01.04 Assetliste og dokumentation</a>
+                    <a href="doc/03_03_04_Animation_Maria%20Viehweg%20Brendstrup.pdf">03.03.04 Animationsopgaven</a>
+                    <a href="http://quizeytimes.com/kea/02_animation/DokumentationsSide/">02.05.03 Færdig opgave</a>
+                    <a href="http://quizeytimes.com/kea/02_animation/Produktion/">Too Much Sharing</a>
+                    <a href="http://quizeytimes.com/kea/03_content/01_pilot/03.01.01%20Pilotopgave/maria_interview.mp4">03.01.01 Pilotprojekt</a>
+                </div>
+            </div>
+        </div>
+        <a href="#medlemmer">Medlemmer & Spil</a>
+        <a href="#ide">Beskrivelse af idé</a>
+        <a href="#spilstruktur">Spil struktur (Activity diagram></a>
+        <a href="#maelgruppe">Beskrivelse af målgruppe</a>
+        <a href="#moodboard">Moodboard</a>
+        <a href="#testdokumentation">Test Dokumentation</a>
+        <a href="#designdokumentationspil">Designdokumentation - Spilskærm</a>
+        <a href="#designdokumentationtitel">Designdokumentation - Titelskærm</a>
+        <a href="#skitser">Skitser</a>
+        <a href="#layoutdiagram">Layoutdiagram</a>
+        <a href="#smd">State Machine diagram</a>
+        <a href="#assets">Assetliste</a>
+        <a href="#fernisering">Fernisering</a>
+        <a href="#trelloboard">Link til Trelloboard</a>
+        <a href="#burndownchart">Burn-down Chart</a>
+        <a href="#annonce">Mockup af annonce</a>
+    </header>
+    <section id="medlemmer">
+        <div class="sectionwrapper">
+            <h1>Medlemmer af Gruppe 7</h1>
+            <div>
+                <p>Lasse Stausgaard</p>
+                <p>Esau Kallen</p>
+                <p>Rikke Christiansen</p>
+                <p>Maria Viehweg Brendstrup</p>
+            </div>
+            <div>
+                <p>Vores Spil:<a href="http://quizeytimes.com/kea/02_animation/Produktion/">Too Much Sharing
+                    </a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="ide">
+        <h1>Beskrivelse af idé</h1>
+        <div class="sectionwrapper">
+            <p>
+                Vores idé med vores spil er at gøre brugeren opmærksom på budskabet bag deling af nøgen billeder og videoer. Vores spil foregår på en animeret telefon, hvor spilleren bliver vist et scenarie og skal så derefter svare på om situationen er rigtig håndteret.
+            </p>
+
+            <p>
+                Vi har samlet tre scenarier med en tekst samtale mellem to personer, man svarer så på spørgsmålet til den samtale og hvis man har bare én forkert så taber man spillet. Man fortsætter dog selvom man svare forkert. Man ved først om man har klaret spillet efter man har svaret på de tre scenarier.
+            </p>
+            <p> Har man svaret rigtigt på alle tre spørgsmål så har man vundet spillet. Vores spils hensigt er at være informerende, men på en hverdags måde. Vi bruger matte farver på titelskærmen og spilbaggrunden, med ingen outline. Slutskærmene er dog lavet med farverne fra Privat Snaks logo.
+
+            </p>
+            <p> Der bliver der yderligere informeret om ulovligheden ved deling af billeder vist med dele af paragrafferne der omhandler det. Der er yderligere Privat Snaks telefon nummer og deres hjemmeside vist på både ’Game Over’ og ’Level Complete’ skærmene.
+            </p>
+        </div>
+    </section>
+
+    <section id="maelgruppe">
+        <h1>Beskrivelse af målgruppe</h1>
+        <div class="sectionwrapper">
+            <div class="col">
+                <p>Vores målgruppe er unge teenager i alderen fra 13 til 15 år. </p>
+                <p>Vores målgruppe er unge som er på sociale medier som kunne have tendens til at dele private nøgenbilleder eller videoer til hinanden.</p>
+                <p> Teenagere tænker nok ikke så meget over det at sende et billede eller video til hinanden, men det kan dog have konsekvenser. De konsekvenser bliver ud dybt i vores spil.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="moodboard">
+        <h1>Moodboard</h1>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="images/Moodboard%201.jpg" alt="DDDDDDDD">
+                        <figcaption>Moodboard 1</figcaption>
+                    </figure>
+                    <figure><img src="images/Moodboard%202.jpg" alt="DDDDDDDD">
+                        <figcaption>Moodboard 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Moodboard%203.jpg" alt="DDDDDDDD">
+                        <figcaption>Moodboard 3 </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="col">
+                    <figure>
+                        <img src="images/Moodboard%204.jpg" alt="DDDDDDDD">
+                        <figcaption>Endeligt Moodboard</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testdokumentation">
+
+        <h1>Test dokumentation</h1>
+        <div class="sectionwrapper">
+            <p style="text-align: center">Vores test er foretaget ud fra et spørgeskema som præsenterer eksempler på 3 forskellige stilarter</p>
+            <h3>Testperson
+            </h3>
+            <p>Elisa Viehweg Brendstrup </p>
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="images/Stilart%201.jpg" alt="Aktivitets Diagram" style="width:100%">
+                        <figcaption>Stilart 1</figcaption>
+                        <p>Dette flatdesign eksempel, bruger for eksempel skygger og ingen outline. Der er både matte og skarpe farver. </p>
+                        <div>
+                            <h4> 1.A - Kan du lide formen og stilen?</h4>
+                            <p>Ja den er okay. Den ser simpel ud, Hvilket får det til at se mere professionelt ud. Dog synes jeg ikke at alle ikoner passer så godt sammen.
+                            </p>
+                            <h4>1.B - Kan du lide farverner?</h4>
+                            <p>ja, jeg kan godt lide farverner fordi de er lidt matte i det.
+                            </p>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="col">
+                    <figure>
+                        <img src="images/Stilart%202.jpg" alt="Aktivitets Diagram" style="width:100%">
+                        <figcaption>Stilart 2</figcaption>
+                        <p>Dette flatdesign eksempel, ligner at det er mere håndtegnet i forhold til de skarpe kanter som man ofte bruger. Her er der en sort outline. </p>
+                        <br>
+                        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                        <div>
+                            <h4> 2.A - Kan du lide formen og stilen?</h4>
+                            <p>Nej. Det ligner ikke noget design. Det ligner bare en tegning. Det ville ikke ligne noget man helt rigtigt ville bruge til et spil.
+                            </p>
+                            <h4>2.B - Kan du lide farverner?</h4>
+                            <p>Nej, det er ret kraftige farver, hvilket ikke er så rart at kigge på.
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure>
+                        <img src="images/Stilart%203.jpg" alt="Aktivitets Diagram" style="width:100%">
+                        <figcaption>Stilart 3</figcaption>
+                        <p>Dette flatdesign eksempel, bruger få komplementære farver og klare kanter. Der er ingen outline her.
+                        </p>
+                        <div>
+                            <h4> 3.A - Kan du lide formen og stilen?</h4>
+                            <p>Ja, det er simpelt og ser professionelt ud.
+                            </p>
+                            <br>
+                            <h4>3.B - Kan du lide farverner?</h4>
+                            <p>
+                                Ja, de er matte så man får ikke ondt i øjnene.
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom">
+                <h4 style="text-align: center; padding-right: 7rem;"> 4 - Hvilken stilart kan du bedst lide?</h4>
+                <p style="text-align: center; padding-right: 7rem;">Nr. 3.</p>
+                <figure>
+                    <img src="images/Sp%C3%B8rgeskema%20udfyldt.jpg" alt="Aktivitets Diagram">
+                    <figcaption>Stilart 3</figcaption>
+                </figure>
+                <h3>Testperson <p>Elisa Viehweg Brendstrup </p>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="spilstruktur">
+        <h1>Spilstruktur & Activity diagram</h1>
+        <div class="sectionwrapper">
+            <figure>
+                <img src="images/Aktivitetsdiagram.JPG" alt="Aktivitets Diagram" style="width:100%">
+                <figcaption>AktivitetsDiagram - Too Much Sharing</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="skitser">
+        <h1>Indledende Skitser</h1>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="images/Skitse%201.jpg" alt="DDDDDDDD">
+                        <figcaption>Skitse 1</figcaption>
+                    </figure>
+                    <figure><img src="images/Skitse%202.jpg" alt="DDDDDDDD">
+                        <figcaption>Skitse 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Skitse%203.jpg" alt="DDDDDDDD">
+                        <figcaption>Skitse 3 </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="col">
+                <figure>
+                    <img src="images/Skitse%204.jpg" alt="DDDDDDDD">
+                    <figcaption>Skitse 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Skitse%205.jpg" alt="DDDDDDDD">
+                    <figcaption>Skitse 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Skitse%206.png" alt="DDDDDDDD" style="width:100%">
+                    <figcaption>Skitse 6</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="designdokumentationspil">
+        <h1>Designdokumentation - Spilskærm</h1>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.26.09.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.26.48.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.27.24.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 3 </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.28.05.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 4</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.28.40.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.29.11.png" alt="DDDDDDDD" style="width:100%">
+                        <figcaption>Skitse 6</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.30.28.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 7</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.31.00.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 8</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-06%20kl.%2017.31.21.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 9 </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom2">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-08%20kl.%2014.03.57.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 10</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-08%20kl.%2014.04.20.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 11</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-08%20kl.%2014.04.43.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 12 </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom3">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-08%20kl.%2014.05.10.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-08%20kl.%2014.05.28.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/rikke/Sk%C3%A6rmbillede%202019-04-08%20kl.%2014.05.43.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 3 </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="designdokumentationtitel">
+        <h1>Designdokumentation - Titelskærm </h1>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(3).png" alt="DDDDDDDD">
+                        <figcaption>Skitse 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(4).png" alt="DDDDDDDD">
+                        <figcaption>Skitse 3 </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(6).png" alt="DDDDDDDD">
+                        <figcaption>Skitse 4</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(8).png" alt="DDDDDDDD">
+                        <figcaption>Skitse 5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(9).png" alt="DDDDDDDD" style="width:100%">
+                        <figcaption>Skitse 6</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="col">
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(10).png" alt="DDDDDDDD">
+                        <figcaption>Skitse 7</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-07%20(11).png" alt="DDDDDDDD">
+                        <figcaption>Skitse 8</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Illustratordokumentation/Lasse/2019-04-08.png" alt="DDDDDDDD">
+                        <figcaption>Skitse 9 </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layoutdiagram">
+        <h1>Layoutdiagram</h1>
+        <div class="sectionwrapper">h
+            <figure>
+                <img src="Billeder/layout%20diagram.jpg" alt="Layout diagram">
+                <figcaption>Layout Diagram Too Much Sharing</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="smd">
+        <h1>State Machine Diagram</h1>
+        <div class="sectionwrapper">
+            <figure>
+                <img src="Billeder/Statemachinediagram-toomuchsharing.jpg" alt="State Machine Diagram">
+                <figcaption>State Machine Diagram</figcaption>
+            </figure>
+        </div>
+
+    </section>
+
+    <section id="assets">
+        <h1>Assetliste</h1>
+        <div class="sectionwrapper">
+            <div class="samtaler">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_samtale1.jpg" alt="DDDDDDDD">
+                        <figcaption>Samtale 1</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_samtale2.jpg" alt="DDDDDDDD">
+                        <figcaption>Samtale 2</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_samtale3.jpg" alt="DDDDDDDD">
+                        <figcaption>Samtale 3</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_samtale4.jpg" alt="DDDDDDDD">
+                        <figcaption>Samtale 4</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_samtale5.jpg" alt="DDDDDDDD">
+                        <figcaption>Samtale 5</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="spørgsmål">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_svar1.jpg" alt="DDDDDDDD">
+                        <figcaption>Spørgsmål 1</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_svar2.jpg" alt="DDDDDDDD">
+                        <figcaption>Spørgsmål 2</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_svar3.jpg" alt="DDDDDDDD">
+                        <figcaption>Spørgsmål 3</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_svar4.jpg" alt="DDDDDDDD">
+                        <figcaption>Spørgsmål 4</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_svar5.jpg" alt="DDDDDDDD">
+                        <figcaption>Spørgsmål 5</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="spilskærme">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_case1.jpg" alt="DDDDDDDD">
+                        <figcaption>Spilskærm 1</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_case2.jpg" alt="DDDDDDDD">
+                        <figcaption>Spilskærm 2</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_case3.jpg" alt="DDDDDDDD">
+                        <figcaption>Spilskærm 3</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_case4.jpg" alt="DDDDDDDD">
+                        <figcaption>Spilskærm 4</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_case5.jpg" alt="DDDDDDDD">
+                        <figcaption>Spilskærm 5</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="skærme">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_startsk%C3%A6rm.jpg" alt="DDDDDDDD">
+                        <figcaption>Startskærm</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_gameover.jpg" alt="DDDDDDDD">
+                        <figcaption>Gameover</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_levelcomplete.jpg" alt="DDDDDDDD">
+                        <figcaption>Levelcomplete</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="hoveder">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_Hoved1.jpg" alt="DDDDDDDD">
+                        <figcaption>Hoved 1</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_Hoved2.jpg" alt="DDDDDDDD">
+                        <figcaption>Hoved 2</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_Hoved3.jpg" alt="DDDDDDDD">
+                        <figcaption>Hoved 3</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_hoved4.jpg" alt="DDDDDDDD">
+                        <figcaption>Hoved 4</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_hoved5.jpg" alt="DDDDDDDD">
+                        <figcaption>Hoved 5</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="Knapper">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_ja.jpg" alt="DDDDDDDD">
+                        <figcaption>Ja knap</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_nej.jpg" alt="DDDDDDDD">
+                        <figcaption>Nej knap</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_thumbDown.jpg" alt="DDDDDDDD">
+                        <figcaption>Thumbs up</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_thumbUp.jpg" alt="DDDDDDDD">
+                        <figcaption>Thumbs down</figcaption>
+
+                    </figure>
+                    <figure><img src="Assetliste/1_Menuknap.jpg" alt="DDDDDDDD">
+                        <figcaption>Menu knap</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="Knapper">
+                <div class="col">
+                    <figure>
+                        <img src="Assetliste/1_PrivatSnak.jpg" alt="DDDDDDDD">
+                        <figcaption>Logo - Privat Snak</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/titel-100.jpg" alt="DDDDDDDD">
+                        <figcaption>Titel element</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_notifikation.jpg" alt="DDDDDDDD">
+                        <figcaption>Notifikation</figcaption>
+                    </figure>
+                    <figure><img src="Assetliste/1_Smileys.jpg" alt="DDDDDDDD">
+                        <figcaption>Diverse Smileys</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="lyd">
+                <div class="lyde1">
+                    <div>
+                        <audio controls>
+                            <source src="Audio/beskedlyd.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Besked lyd</p>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="Audio/taber.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Taber lyd</p>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="Audio/vinder.mp3" type="audio/mp3">
+                        </audio>
+
+                        <p>Vinder lyd</p>
+                    </div>
+                </div>
+                <div class="lyde2">
+                    <div>
+                        <audio controls>
+                            <source src="Audio/stoj1.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Støj lyd 1</p>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="Audio/stoj2.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Støj lyd 2</p>
+                    </div>
+                    <div>
+                        <audio controls>
+                            <source src="Audio/stoj3.mp3" type="audio/mp3">
+                        </audio>
+                        <p>Støj lyd 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="fernisering">
+        <h1>Fernisering</h1>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="Billeder/Fernisering/fern1.jpg" alt="DDDDDDDD">
+                        <figcaption>Ferniserings billede 1</figcaption>
+                    </figure>
+                    <figure><img src="Billeder/Fernisering/fern3.jpg" alt="DDDDDDDD">
+                        <figcaption>Ferniserings billede 2</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="col">
+                    <figure>
+                        <img src="Billeder/Fernisering/fern4.jpg" alt="DDDDDDDD">
+                        <figcaption>Ferniserings billede 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Billeder/Fernisering/fern6.jpg" alt="DDDDDDDD">
+                        <figcaption>Ferniserings billede 4</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trelloboard">
+        <h1>Trelloboard</h1>
+        <div class="sectionwrapper">
+            <p><a href="https://trello.com/b/DUqyKVji/gruppe-7">Trelloboard
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section id="burndownchart">
+        <h1>Burn-down Chart</h1>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="Billeder/BDC.png" alt="DDDDDDDD">
+                        <figcaption>Ferniserings billede 1</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="annonce">
+        <h1>Mockup af annonce</h1>
+        <div class="sectionwrapper">
+
+            <div class="top">
+                <div class="col">
+                    <figure>
+                        <img src="Annoncer/facebook.png" alt="DDDDDDDD">
+                        <figcaption>Facebook annonce</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Annoncer/instagram.png" alt="DDDDDDDD">
+                        <figcaption>Instagram Annonce</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src=""></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+
+}
+
+body {
+    margin: 0 auto;
+    background-color: #bfbabe;
+
+}
+
+a {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 0.7rem;
+    text-align: center;
+    font-family: 'lato:700';
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d2f36;
+    text-transform: uppercase;
+    background-color: #FF9207;
+    color: #ffffff;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+h4 {
+    color: #f5bc50;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+P {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin: 1rem 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    margin-top: 0;
+    color: wheat;
+    font-size: 1.2rem;
+}
+
+section,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-color: black;
+    background-color: #1F2532;
+
+}
+
+#medlemmer .sectionwrapper {
+    background-color: #1F2532;
+}
+
+
+#medlemmer a {
+
+    padding-left: 2rem;
+    color: rgb(79, 204, 250);
+
+}
+
+#link .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#ide .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#spilstruktur .sectionwrapper {
+    background-color: #1F2532;
+}
+
+
+
+#maelgruppe .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#moodboard .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#moodboard .col {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+
+#testdokumentation .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#testdokumentation .top {
+    display: flex;
+}
+
+#testdokumentation .col {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#skister .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+#skitser .col {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#designdokumentationspil .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+
+#designdokumentationspil .col {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#designdokumentationtitel .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+
+#designdokumentationtitel .col {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#layoutdiagram .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#smd .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#assets .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+#assets .top {
+    background-color: #1F2532;
+}
+
+#assets .col {
+    background-color: #1F2532;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#assets .mid {
+    background-color: #1F2532;
+
+}
+
+#assets .lyde2 {
+    background-color: #1F2532;
+    display: flex;
+}
+
+#assets .lyde1 {
+    background-color: #1F2532;
+    display: flex;
+
+}
+
+#fernisering .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+}
+
+#fernisering .top {
+    display: flex;
+}
+
+#fernisering .bottom {
+    display: flex;
+}
+
+#trelloboard .sectionwrapper {
+    background-color: #1F2532;
+    padding: 10rem;
+
+    text-align: center;
+}
+
+#burndownchart .sectionwrapper {
+    background-color: #1F2532;
+}
+
+#burndownchart .col {
+    background-color: #1F2532;
+    display: flex;
+}
+
+#annonce .sectionwrapper {
+    background-color: #1F2532;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+
+#annonce .col {
+    background-color: #1F2532;
+    display: flex;
+
+}
+
+header nav a:link {
+    color: #f2e4d7;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #f2e4d7;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #ff3e2c;
+}
+
+/* selected link */
+header nav a:active {
+    color: #f2e4d7;
+}
+
+header {
+
+    font-size: 2rem;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    padding: 1rem;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2rem 2.5rem;
+
+
+
+}
+
+header a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+
+    color: #e3a124;
+}
+
+header nav a {
+    font-size: 2rem;
+
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+@media only screen and (min-width:1002px) {
+    header {
+        background-color: rgba(49, 53, 108, 0.49);
+
+    }
+
+    header nav {
+        flex-direction: row;
+
+        justify-content: flex-end;
+        margin: 1rem 1.5rem;
+    }
+
+    header nav a {
+        font-size: 1.7rem;
+        margin: 0 0.5rem;
+        padding: 0 2rem;
+        border-right: 0.1rem solid #f2e4d7;
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+
+    }
+}

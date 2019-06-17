@@ -1,0 +1,15 @@
+.titel {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
