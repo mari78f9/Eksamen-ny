@@ -1,8 +1,44 @@
+body {
+    background-color: rgba(211, 211, 211, 0.1);
+}
+
 h1 {
     font-size: 6rem;
     text-align: center;
     font-family: 'aldithscript';
 }
+
+h2 {
+    font-size: 3rem;
+    font-family: 'aldithscript';
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.mig {
+    border-radius: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex-basis: 600px;
+}
+
+.col2 {
+    flex-basis: 800px;
+    margin-left: 30px;
+}
+
 
 @font-face {
     font-family: 'aldithscript';
@@ -12,6 +48,8 @@ h1 {
     font-style: normal;
 
 }
+
+/*MENU*/
 
 .navbar {
     overflow: hidden;
