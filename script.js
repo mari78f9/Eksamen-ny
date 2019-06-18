@@ -13,7 +13,7 @@ function Day() {
     month = monthLabels[month];
     weekDay = weekDayLabels[weekDay];
 
-    document.getElementById("day").innerHTML = "I dag er" + "<span>" + weekDay.toUpperCase() + "</span>";
+    document.getElementById("day").innerHTML = "I DAG ER" + "<span>" + weekDay.toUpperCase() + "</span>";
     document.getElementById("date").innerHTML = month.toUpperCase() + " " + "<span>" + day + "</span>" + year;
 }
 
